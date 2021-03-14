@@ -1,12 +1,10 @@
 // Imports
 #include "Adafruit_DHT.h"
-#include <string>
 
 // Constants
-const int TEMP_PIN = 2;       // Pin connected to the temp sensor
+const int TEMP_PIN = D2;      // Pin connected to the temp sensor
 const int LED_BUILTIN = D7;   // Pin connected to the builtin LED
 const int DELAY_TIME = 35000; // Time between each temp reading (millis)
-const int READINGS = 5;       // Number of temp readings before posting the data
 
 // Initialise temp sensor
 DHT dht(TEMP_PIN, DHT22);
